@@ -1,8 +1,8 @@
 var hSize = 0;
 var vSize = 0;
-var randR = 0; //color variable
-var randV = 0; //color variable
-var randB = 0; //color variable
+var randR = 0; //colour variable
+var randV = 0; //colour variable
+var randB = 0; //colour variable
 
 function setup(){
   createCanvas(windowWidth, windowHeight);
@@ -23,9 +23,7 @@ function draw() {
     hSize = 0;
     vSize = 0;
   }
-
 }
-
 
 function mousePressed(){ //issues random colour whenever mouse is pressed
   randR = random(255);
