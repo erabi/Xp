@@ -1,8 +1,8 @@
 var hSize = 0;
 var vSize = 0;
-var randR = 0; //colour variable
-var randV = 0; //colour variable
-var randB = 0; //colour variable
+var randR = random(255); //colour variable
+var randV = random(255); //colour variable
+var randB = random(255); //colour variable
 
 function setup(){
   createCanvas(windowWidth, windowHeight);
@@ -11,10 +11,9 @@ function setup(){
 
 function draw() {
 
-  background(mouseX,mouseY,(mouseY-mouseX)); //background colour changing with mouse mouvements
+  background(100,200,50); //background colour changing with mouse mouvements
   noStroke(); //no border to shapes
   fill(randR, randV, randB); //ellipse with random colour
-
   ellipse(mouseX, mouseY, hSize, vSize);
   if(mouseIsPressed){ //ellipse grows in size as long as mouse is pressed
     hSize += 5;
@@ -23,6 +22,7 @@ function draw() {
     hSize = 0;
     vSize = 0;
   }
+
 }
 
 function mousePressed(){ //issues random colour whenever mouse is pressed
