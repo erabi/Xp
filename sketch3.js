@@ -16,7 +16,7 @@ function setup(){
 
 function draw() {
 
-  background(100,200,50); //background colour changing with mouse mouvements
+  background(255,255,107); //background colour changing with mouse mouvements
   fuzzyCircle(mouseX, mouseY);
 
   if(mouseIsPressed){ //ellipse grows in size as long as mouse is pressed
@@ -36,7 +36,7 @@ function fuzzyCircle(x,y){
     ellipseMode(RADIUS);
 
     var colour1 = color(randR,randV,randB); //pink colour of the inner ellipse
-    var colour2 = color(100,200,50); // = background colour
+    var colour2 = color(255,255,107); // = background colour
 
     for (var i = radiusC2; i >= radiusC1; i--){
       var colourDegree = map(i,radiusC2,radiusC1,0,1);//value i converted from a value in the range of radiusC1 to radiusC2 into a value that ranges from 0 to 1 to be used as lerpColor() degree.
